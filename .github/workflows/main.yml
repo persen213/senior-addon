@@ -1,0 +1,27 @@
+name: Build Senior
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Zero-particle check
+        run: |
+          if grep -rniE "particle" src/main/java; then
+            echo "Particle code found in the Java sources. This project must not use particles."
+            exit 1
+          fi
+          echo "No particle code found."
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+      - name: Build the mod
+        run: bash gradlew build --no-daemon
+      - name: Save the finished mod
+        uses: actions/upload-artifact@v4
+        with:
+          name: senior-mod
+          path: build/libs/*.jar
