@@ -1,0 +1,12 @@
+{
+  "item.senior.senior_factor": "11th-Dimensional Induction Factor",
+  "senior.ability.senior": "Senior: 11th-Dimensional Manipulation",
+
+  "senior.skill.foldstep": "Foldstep",
+  "senior.skill.foldstep.desc": "Fold the space between you and where you aim and step through it instantly (range 16). Hold sneak while using it to fold through walls to the farthest free spot along your line of sight. Cannot land inside blocks, in unloaded chunks or in protected places.",
+  "senior.skill.spatial_shear": "Spatial Shear",
+  "senior.skill.spatial_shear.desc": "Tear a thin fracture in space along your line of sight (range 12). It passes through obstacles and hurts every enemy on its path, but destroys no blocks.",
+
+  "senior.message.no_destination": "No safe place to fold to.",
+  "senior.message.refused_place": "The server does not allow that destination."
+}

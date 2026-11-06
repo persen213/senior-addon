@@ -1,0 +1,25 @@
+modLoader="javafml"
+loaderVersion="[47,48)"
+license="All Rights Reserved"
+
+[[mods]]
+modId="senior"
+version="${version}"
+displayName="Senior: 11th-Dimensional Manipulation (Re:AcademyCraft add-on)"
+description='''
+Adds a new Esper category, Senior (11th-Dimensional Manipulation), to Re:AcademyCraft. No particles: all visuals are drawn as custom geometry.
+'''
+
+[[dependencies.senior]]
+modId="academy"
+mandatory=true
+versionRange="[1.5.0,1.6)"
+ordering="AFTER"
+side="BOTH"
+
+[[dependencies.senior]]
+modId="forge"
+mandatory=true
+versionRange="[47.4.10,48)"
+ordering="NONE"
+side="BOTH"
